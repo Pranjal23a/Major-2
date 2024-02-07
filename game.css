@@ -7,6 +7,9 @@ body {
   display: grid;
   place-items: center;
   overflow: hidden;
+  background: url('img.webp');
+  background-size: cover;
+  background-size: 100% 85%;
 }
 
 .cont {
@@ -27,7 +30,7 @@ body {
   width: 50px;
   height: 50px;
   border-radius: 100px;
-  background-color: rgb(236, 82, 82);
+  /* background-color: rgb(236, 82, 82); */
   position: relative;
   border: 3px solid black;
 
@@ -41,6 +44,7 @@ body {
   /* top: 0; */
   left: -62px;
   z-index: 2;
+  background-color: black;
 }
 
 #p2 {
@@ -49,7 +53,8 @@ body {
   top: -55px;
   left: -62px;
   transition: all linear 0.5s;
-  background-color: rgb(243, 181, 46);
+  /* background-color: rgb(243, 181, 46); */
+  background-color: black;
 }
 
 img {
@@ -61,6 +66,7 @@ img {
   width: 615px;
   height: 615px;
 }
+
 #diceCont {
   display: grid;
   place-items: center;
@@ -70,6 +76,7 @@ img {
   font-size: 2rem;
   z-index: 99;
 }
+
 #diceBtn {
   z-index: 99;
   padding: 5px;
@@ -80,7 +87,7 @@ img {
 }
 
 @media (max-width: 1250px) {
-  
+
   #diceCont {
     display: flex;
     place-items: none;
@@ -88,13 +95,15 @@ img {
     left: 36vw;
     border: 2px solid red;
   }
+
   #diceBtn {
     width: 200px;
     margin-left: 20px;
   }
 }
+
 @media (max-width: 1250px) {
-  
+
   #diceCont {
     display: flex;
     place-items: none;
@@ -102,6 +111,7 @@ img {
     left: 10vw;
     /* border: 2px solid red; */
   }
+
   #diceBtn {
     width: 200px;
     margin-left: 20px;

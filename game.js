@@ -1,7 +1,8 @@
 let tog = 1
 let rollingSound = new Audio('rpg-dice-rolling-95182.mp3')
 let winSound = new Audio('winharpsichord-39642.mp3')
-
+let bgSound = new Audio('bgsound.mp3');
+bgSound.play();
 
 
 let p1sum = 0
@@ -154,7 +155,7 @@ function play(player, psum, correction, num) {
             alert("Red Won !!")
         }
         else if (player == 'p2') {
-            alert("Yellow Won !!")
+            alert("Blue Won !!")
         }
         location.reload()
     }
@@ -243,7 +244,7 @@ function roll() {
 
 
     if (tog % 2 != 0) {
-        document.getElementById('tog').innerText = "Yellow's Turn"
+        document.getElementById('tog').innerText = "Blue's Turn"
         play('p1', 'p1sum', 0, num)
 
     }
